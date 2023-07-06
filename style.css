@@ -16,7 +16,7 @@ font-family: 'Open Sans', sans-serif;
 }
 
 body {
-  border: 1px solid black;
+  /* border: 1px solid black; */
 
   width: 1280px;
   height: 720px;
@@ -26,10 +26,12 @@ body {
 
   align-items: center;
 
+  position: relative;
+
 }
 
 main {
-  border: 1px solid black;
+  /* border: 1px solid black; */
 
   width: 592px;
   height: 579px;
@@ -39,4 +41,64 @@ main {
 
   align-items: center;
 
+}
+
+main h1 {
+  margin-top: 72px;
+  margin-bottom: 32px;
+
+  font-family: Inter;
+  text-align: center;
+  font-size: 49px;
+  font-weight: 700;
+  line-height: 56px;
+}
+
+main p {
+  color: var(--cor-cinza);
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 28px;
+
+  margin-bottom: 28px;
+}
+
+footer {
+  margin-top: calc(72px - 28px);
+  width: 569px;
+
+  border-top: 1px solid var(--cor-branco-gelo);
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  padding-top: 8px;
+
+  gap: 27px;
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+footer p {
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  text-decoration-line: underline;
+}
+
+#balls {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.laranja {
+  color: var(--cor-laranja)
 }
